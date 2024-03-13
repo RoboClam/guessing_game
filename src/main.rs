@@ -6,8 +6,10 @@ fn main() {
 
     let mut guess = String::new();
 
-    let _ = std::io::stdin().read_line(&mut guess);
+    std::io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read...");
 
-    println!("You guessed {}", guess);
+    println!("You guessed {guess}");
 
 }
