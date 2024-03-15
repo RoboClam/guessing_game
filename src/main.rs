@@ -14,5 +14,4 @@ fn main() {
 
     println!("You guessed {guess}");
     println!("Secret number {secret_number}");
-
 }
